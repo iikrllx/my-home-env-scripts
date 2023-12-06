@@ -23,7 +23,7 @@ fi
 
 case "$1" in
 	"-f"|"--file")
-		if [ ! -f $2 ]; then
+		if [ ! -f $2 ] || [ -z $2 ]; then
 			>&2 echo "\$2 incorrect"
 			usage 1
 		fi
