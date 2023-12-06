@@ -1,3 +1,4 @@
 To configure tools such as: vim, mc, tmux, etc ...
 Don't run this script on your machine if you don't know what it does.
 It can replace your current configuration files with files from the project.
+I am using this scrypt on Debian Bookworm (Xfce).
