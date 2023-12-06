@@ -174,10 +174,10 @@ bashrc_append()
 	echo >> ~/.bashrc
 	cat conf/bashrc >> ~/.bashrc
 
-	# my script directory '$HOME/main/bin'
-	if mount | grep main &>/dev/null; then
-		echo -e "\nexport PATH=$HOME/main/root/bin:\"\$${!PATH@}"\" >> ~/.bashrc
-	fi
+	for f in crypt mygit; do
+		[ -x ~/git/myenv/my-home-env-scripts/$f/$f ] && \
+		echo -e "\nexport PATH=$HOME/git/myenv/my-home-env-scripts/$f:\"\$${!PATH@}"\" >> ~/.bashrc
+	done
 
 	if dpkg -l tmux &>/dev/null; then
 		echo -e "\n[ -z \$TMUX ] && tmux" >> ~/.bashrc
