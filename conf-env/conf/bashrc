@@ -13,6 +13,14 @@ tos()
     fi
 }
 
+tod()
+{
+    if [ -d ~/main ]; then
+        cd ~/main
+	vim other/notes/todo/head
+    fi
+}
+
 tm()
 {
   echo "aplay /usr/share/sounds/for-script/prompt.wav" | \

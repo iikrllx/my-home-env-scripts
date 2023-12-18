@@ -23,3 +23,8 @@ set pagination off
 
 # the default value of max-value-size is currently 64k
 set max-value-size unlimited
+
+# select which modules to display
+# this actual for https://git.io/.gdbinit
+# I don't need show source because I use tui mode
+dashboard -layout stack variables
