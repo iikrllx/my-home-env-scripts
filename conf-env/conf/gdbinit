@@ -28,3 +28,6 @@ set max-value-size unlimited
 # this actual for https://git.io/.gdbinit
 # I don't need show source because I use tui mode
 dashboard -layout stack variables
+
+# tui mode
+tui enable
