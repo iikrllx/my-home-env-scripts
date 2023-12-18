@@ -174,7 +174,7 @@ bashrc_append()
 	echo >> ~/.bashrc
 	cat conf/bashrc >> ~/.bashrc
 
-	for f in crypt mygit; do
+	for f in crypt mygit skeleton; do
 		[ -x ~/git/myenv/my-home-env-scripts/$f/$f ] && \
 		echo -e "\nexport PATH=$HOME/git/myenv/my-home-env-scripts/$f:\"\$${!PATH@}"\" >> ~/.bashrc
 	done
